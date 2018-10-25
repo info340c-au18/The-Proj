@@ -65,7 +65,8 @@ footer {
     box-shadow: 2px 2px; }
 
 .genre-container {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
 
 .music-player {
   padding: 13px;
@@ -102,7 +103,13 @@ footer {
   padding: 20px;
   margin-top: 20px; }
   .text-box p {
-    padding: 15px; }
+    padding: 15px;
+    text-align: left; }
+  .text-box ul {
+    list-style: none; }
+  .text-box li {
+    padding: 15px;
+    list-style: none; }
 
 .about-title {
   background-color: white;
