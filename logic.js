@@ -1,5 +1,19 @@
 'use strict';
 
+window.onload = function () {
+    $("#getSongs").click(function () {
+        $("a").remove(".songEl");
+        fetchTrackList();
+    });
+
+    $("#getArtists").click(function () {
+        $("ol").remove(".artist-cont");
+        fetchArtists();
+    });
+
+
+};
+
 function fetchTrackList() {
     // console.log("it works: " + searchTerm);
 
@@ -168,14 +182,4 @@ function getArtists(data) {
 
 
 
-window.onload = function () {
-    $("#getSongs").click(function () {
-        fetchTrackList();
-    });
 
-    $("#getArtists").click(function () {
-        fetchArtists();
-    });
-
-
-};
