@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="normalize.css">
-    <title>The Music Archive</title>
+    <title>Login - The Music Archive</title>
 </head>
 
 <body>
@@ -58,40 +58,27 @@
             <h2>"Explore Thy Muse.." </h2>
         </div>
 
-
-
         <div class="black-line"></div>
-
-        <div class="flex-container">
-            <div class="topSongsCont flex-child">
-                <button class="getTopSongs" id="getSongs">
-                    <h3>Get Top Songs Atm (Click Me):</h3>
-                </button>
-                <!-- <h2>On both Desktop / Mobile:</h2> -->
-                <p><strong>Click the button above: to see the Top Songs Right Now! :)</strong></p>
-                <!-- <p><strong>{Click on Album Covers to open the Songs}</strong></p> -->
-
-
-
-
-                <!-- <div class="song-container">
-
-                </div> -->
-            </div>
-
-            <div class="black-line"></div>
-
-            <div class="topArtistsCont flex-child">
-                <button class="getTopArtists" id="getArtists">
-                    <h3>Get Top Artists Atm (Click Me):</h3>
-
-                </button>
-
-                <p><strong>Click ^ : to explore the Top Artists right now!</strong></p>
-            </div>
-
-        </div>
     </div>
+
+
+    <div class="container login-cont">
+        <form class="form-signin" action="/login.html">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div> <!-- /container -->
+
 
 
     <footer>
