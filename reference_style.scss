@@ -1,5 +1,5 @@
 html, body { 
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(206, 205, 205);
 }
 
 nav img {
@@ -21,21 +21,18 @@ nav img {
         h1 {
             margin-top: 0px;
             margin-bottom: 8px;
-            font-size: 40px;
         }
 
         h2 {
             font-size: 1.2rem;
             margin: 0px;
-            font-size: 30px;
-            color: rgb(77, 66, 2);
         }
-        // margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
 
 .main img {
-    // width: 90%;
+    width: 90%;
 }
 
 
@@ -46,36 +43,23 @@ h3 {
 
 .flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 3px;
-    padding: 10px;
 
     background-color: rgb(255, 255, 255);
 
-
-
     .flex-child {
-        // padding-top: 10px;
-        margin-bottom: 25px;
-        // height: 300px;
-        
-        .song-container {
-            display: flex;
-            flex-direction: row;
-
-
-        }
+        padding-top: 10px;
+        width: 33%;
+        // height: 200px;
+        // border: 2px solid black;
+        margin-bottom: 0px;
 
         button {
-<<<<<<< HEAD
             // height: 25px;
-            padding: 5px 5px;
-=======
             padding: 0 5px;
->>>>>>> stage-2
             width: 90%;
-
             margin-bottom: 7px;
             
             h4 {
@@ -128,6 +112,7 @@ footer {
     width: 80%;
     margin: 0 auto;
     margin-top: 15px;
+    // text-align: center;
 
     .text {
         h3 {
@@ -168,7 +153,24 @@ footer {
     }
 }
 
+.text-box {
+    padding: 20px;
+    margin-top: 20px;
 
+    p {
+        padding: 15px;
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding: 15px;
+        list-style: none;
+    }
+}
 
 .about-title {
     background-color: white;
@@ -186,118 +188,87 @@ footer {
 
 }
 
-// .genre-selector {
-//     background-color: rgb(46, 46, 46);
-//     padding-top: 15px;
-//     padding-bottom: 10px;
-
-//     h2 {
-//         font-size: 16px;
-//     }
-//     color: rgb(48, 48, 48);
-
-//     button {
-//         height: 30px;
-//         padding:4px;
-//         padding-left: 10px;
-//         padding-right: 10px;
-//         background-color: rgb(96, 163, 102);
-//         color: white;
-//     }
-// }
-
-.black-line {
-    background-color: rgb(62, 62, 62);
-    height: 13px;
+.about-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 
+@media (min-width: 768px) {
+    .music-player {
+        .album-cover {   
+            height: 220px;
+            width: 220px;
+        }
 
-.grow{ 
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
+        .play-buttons {
+            width: 320px;
+            padding: 10px 0;
+        }
+        .text {
+            h3 {
+                font-size: 2.1rem;
+            }
+    
+            h4 {
+                font-size: 1.6rem;
+            }
+        }
 
-button {
-    background-color: rgb(3, 133, 88);
-    border-radius: 5px;
-    color: white;
-    width: 200px;
-
-    h3 {
-        padding: 10px;
+    
     }
-}
 
+    .about-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
 
-.artist-cont {
-    padding: 20px;
-    background-color: rgb(6, 89, 134);
+        .text-box {
+            width: 50%;
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
     
 }
 
-.artist-li {
-    background-color: rgb(170, 237, 245);
+@media (min-width: 1175px) {
+    .music-player {
+        .text {
+            h3 {
+                font-size: 2.2rem;
+            }
     
-    list-style-type: none;
-    padding: 10px;
-    margin-bottom: 5px;
-    box-shadow: 2px 1px;
-
-    @media only screen and(min-width: 970px) {
-        width:50%;
-        float:left;
-        box-shadow: none;
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
     }
 
-    
-    
-}
+    .about-flex {
+        .text-box {
+            width: 50%;
 
-.respoSongEl {
-    width: 30%;
-    @media only screen and(min-width: 725px){
-        width: 15%;
+            img {
+                width: 70%;
+                margin-bottom: 20px;
+            }
 
-        
-    }
-}
-
-.prof-pic {
-    float:left;
-}
-
-.artist-pic {
-    margin-right: 15px;
-    @media only screen and(min-width: 570px) {
-        
-        margin-left: 20%;
-    }
-
-    height: 40px;
-    width: 40px;
-    float: left;
-}
-
-.artist-bio {
-    text-align: left;
-}
-
-.song-name {
-    font-size: 8px;
-
-    @media only screen and(min-width: 680px) {
-        
-        font-size: 10px;
+            h2 {
+                font-size: 2.3rem;
+            }
+            p {
+                font-size: 1.2rem;
+                padding: 0 45px;
+                
+            }
+        }
     }
 }
 
-.login-cont {
-    padding-top: 35px;
-}

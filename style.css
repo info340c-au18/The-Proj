@@ -1,169 +1,54 @@
-html, body {
-  background-color: #cecdcd; }
+/*
+Error: Invalid CSS after "...adding: 5px 5px": expected "{", was ";"
+        on line 73 of /Users/school/Desktop/Fall 2018 UW Classes/Client -Info 340/The Project/The-Proj/style.scss
 
-nav img {
-  height: 60px;
-  width: 60px; }
+68:         }
+69: 
+70:         button {
+71: <<<<<<< HEAD
+72:             // height: 25px;
+73:             padding: 5px 5px;
+74: =======
+75:             padding: 0 5px;
+76: >>>>>>> stage-2
+77:             width: 90%;
+78: 
 
-.main {
-  background-color: #1a1a1a;
-  text-align: center;
-  padding: 20px 0; }
-  .main .title {
-    background-color: #f0f0f0;
-    padding: 5px;
-    margin-bottom: 20px; }
-    .main .title h2 {
-      font-size: 1.2rem; }
-
-.main img {
-  width: 90%; }
-
-h3 {
-  font-size: 1.1rem; }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 3px;
-  background-color: white; }
-  .flex-container .flex-child {
-    padding-top: 10px;
-    width: 33%;
-    margin-bottom: 0px; }
-    .flex-container .flex-child button {
-      padding: 5px 5px;
-      width: 90%;
-      margin-bottom: 7px; }
-      .flex-container .flex-child button h4 {
-        font-size: 1rem;
-        font-weight: 300;
-        background-color: #e4e4e4;
-        color: black;
-        padding: 2px 0; }
-
-footer {
-  text-align: center;
-  width: 100%;
-  background-color: #343434;
-  color: white;
-  position: fixed;
-  bottom: 0; }
-
-.play-buttons i {
-  margin: 0 5px;
-  height: 25px;
-  width: 25px; }
-
-.search {
-  background-color: #17934f;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .search input {
-    background-color: #f5f4f4;
-    box-shadow: 2px 2px; }
-
-.genre-container {
-  margin-bottom: 20px;
-  padding-bottom: 10px; }
-
-.music-player {
-  padding: 13px;
-  background-color: #f9f9a3;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 15px; }
-  .music-player .text h3 {
-    color: #fa2121;
-    font-size: 1.4rem; }
-  .music-player .text h4 {
-    font-size: 1.1rem; }
-  .music-player .album-cover {
-    margin: 0 auto;
-    background-image: url("./odesza.jpg");
-    height: 170px;
-    width: 170px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10px; }
-  .music-player .play-buttons {
-    width: 220px;
-    margin: 0 auto;
-    background-color: #131313;
-    padding-top: 8px;
-    height: 50px; }
-    .music-player .play-buttons button {
-      background-color: white; }
-      .music-player .play-buttons button i {
-        color: black; }
-
-.text-box {
-  padding: 20px;
-  margin-top: 20px; }
-  .text-box p {
-    padding: 15px;
-    text-align: left; }
-  .text-box ul {
-    list-style: none; }
-  .text-box li {
-    padding: 15px;
-    list-style: none; }
-
-.about-title {
-  background-color: white;
-  width: 80%;
-  margin: 0 auto;
-  color: black; }
-
-.red-text {
-  color: #f36d55; }
-
-.white-text {
-  color: white; }
-
-.about-flex {
-  display: flex;
-  flex-direction: column; }
-
-@media (min-width: 768px) {
-  .music-player .album-cover {
-    height: 220px;
-    width: 220px; }
-  .music-player .play-buttons {
-    width: 320px;
-    padding: 10px 0; }
-  .music-player .text h3 {
-    font-size: 2.1rem; }
-  .music-player .text h4 {
-    font-size: 1.6rem; }
-
-  .about-flex {
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .about-flex .text-box {
-      width: 50%; }
-      .about-flex .text-box h2 {
-        font-size: 2rem;
-        margin-bottom: 15px; }
-      .about-flex .text-box p {
-        font-size: 1rem; } }
-@media (min-width: 1175px) {
-  .music-player .text h3 {
-    font-size: 2.2rem; }
-  .music-player .text h4 {
-    font-size: 1.5rem; }
-
-  .about-flex .text-box {
-    width: 50%; }
-    .about-flex .text-box img {
-      width: 70%;
-      margin-bottom: 20px; }
-    .about-flex .text-box h2 {
-      font-size: 2.3rem; }
-    .about-flex .text-box p {
-      font-size: 1.2rem;
-      padding: 0 45px; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/school/Desktop/Fall 2018 UW Classes/Client -Info 340/The Project/The-Proj/style.scss:73
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...adding: 5px 5px\": expected \"{\", was \";\"\A         on line 73 of /Users/school/Desktop/Fall 2018 UW Classes/Client -Info 340/The Project/The-Proj/style.scss\A \A 68:         }\A 69: \A 70:         button {\A 71: <<<<<<< HEAD\A 72:             // height: 25px;\A 73:             padding: 5px 5px;\A 74: =======\A 75:             padding: 0 5px;\A 76: >>>>>>> stage-2\A 77:             width: 90%;\A 78: "; }
