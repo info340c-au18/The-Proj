@@ -6,7 +6,7 @@ function fetchTrackList() {
     let apiKey = "3b7073a687cc95da319e6dff74046fac";
     // const URL_TEMPLATE = "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=" + akiKey + "&format=json";
     // const URL_TEMPLATE = "http://api.napster.com/v2.2/albums/new?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=5?genre=pop";
-    const URL_TEMPLATE = "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=3b7073a687cc95da319e6dff74046fac&format=json";
+    const URL_TEMPLATE = "https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=3b7073a687cc95da319e6dff74046fac&format=json";
 
     return fetch(URL_TEMPLATE)
         .then(function (response) {
@@ -107,7 +107,7 @@ function fetchArtists() {
     let apiKey = "3b7073a687cc95da319e6dff74046fac";
     // const URL_TEMPLATE = "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=" + akiKey + "&format=json";
     // const URL_TEMPLATE = "http://api.napster.com/v2.2/albums/new?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=5?genre=pop";
-    const URL_TEMPLATE = "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=3b7073a687cc95da319e6dff74046fac&format=json";
+    const URL_TEMPLATE = "https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=3b7073a687cc95da319e6dff74046fac&format=json";
 
     return fetch(URL_TEMPLATE)
         .then(function (response) {
